@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Audio Player</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <section id="main">
+                <h1>Audio Player</h1>
+
+                <canvas id='canvas' width="500" height="270"></canvas>
+
+                <hr>
+
+                <p>
+                    <label>Songs in Queue: </label>
+                    <span id="queue"></span>
+
+                    <br>
+
+                    <label>Now Playing: </label>
+                    <span id="name"></span>
+
+                    <br>
+
+                    <label>Duration: </label>
+                    <span id="duration"></span>
+                </p>
+
+                <div class="controls">
+                    <input type="button" id="backward" value="⏪" onclick="backward_song()"/>
+                    <input type="button" id="forward" value="⏩" onclick="forward_song()"/>
+
+                    &nbsp;
+                    &nbsp;
+
+                    <input type="button" id="pause" value="⏸" onclick="pause_song()"/>
+                    <input type="button" id="mute" value="🔉" onclick="mute_song()"/>
+                </div>              
+            </section>
+        </div>
+
+        <script type="text/javascript" src="assets/js/audio.js"></script>
+    </body>
+</html>
